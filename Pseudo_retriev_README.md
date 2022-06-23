@@ -1,0 +1,29 @@
+# Soler-Camargo-2022
+Soler-Camargo et al, 2022. The rate and role of pseudogenes of the Mycobacterium tuberculosis complex
+
+INPUT files:
+
+1 - The gbff and cds.fna files of each genome downloaded from NCBI.
+
+Add the files in a directory with the Pseudo_retriev.py algorithm and run the following command:
+
+python3 Pseudo_retriev.py
+
+OUTPUT files:
+
+1 - The ".fasta" file that contains the nucleotide sequences of all pseudogenes without pseudogenes in the 3' and 5' ends of contigs predicted by PGAP of NCBI.
+2 - The ".txt" file that contains the count of pseudogenes at 3' and 5' ends of contigs and the remaining pseudogenes.
+
+NOTES:
+
+- The gbff and fna files must have the exactly same name.
+
+- We recommend to not change the name of the files downloaded from NCBI.
+
+- Do not add any other .gbff or .fna files in the directory.
+
+- You may run this algorithm for all analyzed genomes at once.
+
+- The algorithm accepts complete and incomplete (draft) genomes.
+
+- The algorithm shows the number of pseudogenes before and after curation of each strain.  
